@@ -1,6 +1,11 @@
 {
   "name": "pantherhacks",
   "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vercel dev",
+    "test": "node --test tests/*.test.js"
+  },
   "description": "PantherHacks 2025 project repo Name: Wellness Wizard Description: Wellness Wizard is a medicalGBT that allows you to identify your symptoms with a chatbox and provide you with solutions to combat your illness.",
   "main": "index.js",
   "repository": {

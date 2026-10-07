@@ -149,13 +149,13 @@
                             <img src="assets/wizard_logo.png" style="text-align:center; width:200px;">
                             <p class="card-text">Type your symptoms or concerns below:</p>
                             <div class="input-group mb-3">
-                              <textarea id="userInput" class="form-control bg-dark" rows="3" placeholder="Type your message here..." style="color:white"></textarea>
+                              <textarea id="userInput" class="form-control bg-dark" rows="3" maxlength="4000" aria-label="Symptoms or concerns" placeholder="Type your message here..." style="color:white"></textarea>
                                 <button class="btn btn-outline-secondary" type="button" id="sendButton"><i class="fa fa-solid fa-wand-sparkles"></i> Summon the Wellness Wizard!</button>
                             </div>
                             <!-- RESPONSE AREA -->
                             <div class="mt-4">
                               <h4>Response:</h4>
-                              <div id="responseArea" class="border p-3 rounded bg-dark"></div>
+                              <div id="responseArea" class="border p-3 rounded bg-dark" role="status" aria-live="polite" aria-atomic="true" aria-busy="false"></div>
                           </div>
                             <!-- ALERT INSIDE THE CARD -->
                             <div class="container">
